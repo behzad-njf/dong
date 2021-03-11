@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Dong</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="are_you_sure_you_want_delete_this_account">Are you sure you want delete this account?</string>
+    <string name="by_deleting_account_all_related_persons_and_expenses_will_be_deleted">By deleting account all related Persons and Expenses will be deleted!</string>
+    <string name="sure_delete">Sure,Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_account">Create Account</string>
+    <string name="a_title_for_this_account">A title for this account</string>
+    <string name="account_title">Account Title</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_expenses">Expenses</string>
+    <string name="menu_persons">Persons</string>
+    <string name="menu_report">Report</string>
+
+    <string name="persons_count">%s  Persons</string>
+
+    <string name="price_unit"> Tooman </string>
+    <string name="total_expenses">Total Expenses : %s </string>
+
+    <string name="save_account">Save account</string>
+    <string name="save_person">Save Person</string>
+    <string name="person_name">Person Name</string>
+    <string name="a_name_for_person">A name for Person</string>
+    <string name="add_person">Add Person</string>
+    <string name="are_you_sure">Are you sure ?</string>
+    <string name="by_deleting_person_all_related_expenses_will_be_deleted">By deleting person,All related expenses will be deleted!</string>
+    <string name="expense_title">Expense Title</string>
+    <string name="save_expense">Save Expense</string>
+    <string name="payer_person">Payer Person :</string>
+    <string name="date">Date :</string>
+    <string name="price">Price :</string>
+    <string name="are_you_sure_you_want_to_delete_this_item">Are you sure you want to delete this Item ?</string>
+    <string name="accounts_list">Account\'s List</string>
+    <string name="Deptor">Deptor</string>
+    <string name="Creditor">Creditor</string>
+    <string name="expenses_summary">Expenses Summary</string>
+    <string name="total_expenses1">Total Expenses :</string>
+    <string name="each_person_s_share">Each person\'s share</string>
+    <string name="creditors_and_debtors">Creditors and Debtors</string>
+    <string name="suggested_solution_to_settle_up">Suggested solution to settle up</string>
+    <string name="toast_msg_add_person">Please Add persons for this account</string>
+    <string name="accounts">Accounts</string>
+    <string name="invalid_date">Invalid Date</string>
+    <string name="for_generate_report_please_insert_persons_and_expenses_for_this_account">For generate report please insert persons and expenses for this account</string>
+    <string name="invalid_price">Invalid Price</string>
+    <string name="expense_title_cant_be_empty">Expense title can\'t be empty</string>
+    <string name="separate_persons_with_dot_for_multiple_persons">Separate persons with dot(.) for multiple persons</string>
+</resources>

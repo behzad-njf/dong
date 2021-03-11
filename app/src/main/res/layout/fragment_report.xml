@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="ir.mrhib.dong.view.adapter.TransactionsListAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        tools:context=".view.fragments.ReportFragment">
+
+        <TextView
+            android:id="@+id/txt_enter_persons_expenses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/for_generate_report_please_insert_persons_and_expenses_for_this_account"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/backtest"
+                android:padding="5dp"
+                tools:context=".view.fragments.ReportFragment">
+
+                <TextView
+                    android:id="@+id/text_expenses_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/expenses_summary"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/layout_summaries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/text_expenses_summary">
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/short_line"
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="#00D7FD"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_summaries" />
+
+                <LinearLayout
+                    android:id="@+id/layout_total_expenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/short_line">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="@string/total_expenses1"
+                        android:textSize="17sp"
+                        app:drawableStartCompat="@drawable/ic_expenses_colored" />
+
+                    <TextView
+                        android:id="@+id/txtSumPrices"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.7"
+                        android:gravity="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_each_person_dong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/each_person_s_share"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/layout_total_expenses" />
+
+                <TextView
+                    android:id="@+id/txtDong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backtest"
+                    android:fontFamily="@font/titr"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_each_person_dong" />
+
+
+                <TextView
+                    android:id="@+id/txt_creditors_and_debtors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/creditors_and_debtors"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/txtDong" />
+
+                <LinearLayout
+                    android:id="@+id/layout_creditors_and_debtors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@id/txt_creditors_and_debtors">
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_suggested_sulution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/suggested_solution_to_settle_up"
+                    android:textSize="20sp"
+                    app:layout_constraintTop_toBottomOf="@id/layout_creditors_and_debtors" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_transactions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintTop_toBottomOf="@id/txt_suggested_sulution" />
+
+
+                <ImageView
+                    android:id="@+id/imgScreenShot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/list_transactions" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

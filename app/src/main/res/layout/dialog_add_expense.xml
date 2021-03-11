@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="account"
+            type="ir.mrhib.dong.model.Account" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintCircleRadius="25dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_expense_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_expense_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_list"
+                android:fontFamily="@font/titr"
+                android:gravity="center"
+                android:hint="@string/expense_title"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:nextFocusDown="@id/et_expense_price"
+                android:textColor="#000" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_expense_title">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:text="@string/price"
+                app:drawableStartCompat="@drawable/ic_expenses_colored" />
+
+            <EditText
+                android:id="@+id/et_expense_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:autofillHints="@string/price_unit"
+                android:gravity="center"
+                android:hint="@string/price_unit"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:nextFocusDown="@id/tv_expense_date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_payer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_price">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="10dp"
+                android:text="@string/payer_person"
+                app:drawableStartCompat="@drawable/ic_person" />
+
+            <Spinner
+                android:id="@+id/spinner_persons"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:entries="@{account.persons}"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_payer">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:text="@string/date"
+                app:drawableStartCompat="@drawable/ic_calendar" />
+
+            <EditText
+                android:id="@+id/tv_expense_date"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center"
+                android:hint="سال/ماه/روز"
+                android:inputType="date"
+                android:maxLength="10" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddExpense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#2B7B00"
+            android:fontFamily="@font/titr"
+            android:text="@string/save_expense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout_date" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">دنگ</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="are_you_sure_you_want_delete_this_account">آیا از حذف این اکانت مطمئن هستید؟</string>
+    <string name="by_deleting_account_all_related_persons_and_expenses_will_be_deleted">با حذف اکانت تمام اطلاعات آن شامل افراد و هزینه های مربوط به آن نیز حذف خواهد شد</string>
+    <string name="sure_delete">بله، حذف شود</string>
+    <string name="cancel">برگشت</string>
+    <string name="create_account">ایجاد حساب جدید</string>
+    <string name="a_title_for_this_account">یک عنوان برای حساب وارد کنید</string>
+    <string name="account_title">عنوان حساب</string>
+    <string name="title_activity_main">اطلاعات حساب</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="menu_expenses">هزینه ها</string>
+    <string name="menu_persons">افراد</string>
+    <string name="menu_report">گزارش</string>
+
+
+    <string name="persons_count">%s  نفر</string>
+
+
+    <string name="price_unit"> تومان </string>
+    <string name="total_expenses">مجموع هزینه ها : %s </string>
+
+
+    <string name="save_account">ذخیره حساب</string>
+    <string name="save_person">ذخیره</string>
+    <string name="person_name">نام فرد</string>
+    <string name="a_name_for_person">نام فرد را وارد کنید</string>
+    <string name="add_person">اضافه کردن فرد جدید</string>
+    <string name="are_you_sure">آیا مطمئن هستید؟</string>
+    <string name="by_deleting_person_all_related_expenses_will_be_deleted">با حذف کردن شخص،کلیه هزینه های آن نیز حذف خواهد شد!</string>
+    <string name="expense_title">عنوان هزینه</string>
+    <string name="save_expense">ذخیره </string>
+    <string name="payer_person">پرداخت کننده :</string>
+    <string name="date">تاریخ :</string>
+    <string name="price">قیمت :</string>
+    <string name="are_you_sure_you_want_to_delete_this_item">آیا از حذف این مورد مطمئن هستید؟</string>
+    <string name="accounts_list">لیست حساب ها</string>
+    <string name="Deptor">بدهکار</string>
+    <string name="Creditor">طلبکار</string>
+
+    <string name="expenses_summary">خلاصه هزینه ها</string>
+    <string name="total_expenses1">مجموع کل هزینه ها :</string>
+    <string name="each_person_s_share">سهم هر نفر </string>
+    <string name="creditors_and_debtors">بدهکار و طلب کار</string>
+    <string name="suggested_solution_to_settle_up">راه حل پیشنهادی برای تسویه حساب</string>
+    <string name="toast_msg_add_person">ابتدا لیست افراد را وارد کنید</string>
+    <string name="accounts">لیست حساب ها</string>
+    <string name="invalid_date">تاریخ وارد شده اشتباه است</string>
+    <string name="for_generate_report_please_insert_persons_and_expenses_for_this_account">برای گزارش ابتدا افراد و هزینه های مربوط به این حساب را وارد کنید</string>
+    <string name="invalid_price">قیمت نامعتبر</string>
+    <string name="expense_title_cant_be_empty">عنوان هزینه نباید خالی باشد</string>
+    <string name="separate_persons_with_dot_for_multiple_persons">برای اضافه کردن چند فرد همزمان میتوانید آنها را با نقطه(.) از هم جدا کنید</string>
+</resources>

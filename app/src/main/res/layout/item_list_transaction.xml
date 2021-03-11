@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="transaction"
+            type="ir.mrhib.dong.model.Transaction" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/backtest_red"
+            android:fontFamily="@font/titr"
+            android:gravity="center"
+            android:text="@{transaction.from}"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4"
+            android:background="@drawable/ic_arrow"
+            android:fontFamily="@font/titr"
+            android:gravity="center"
+            android:text="@{String.format(`%,d`,transaction.amount) + ` ` + @string/price_unit}"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="@drawable/backtest_green"
+            android:fontFamily="@font/titr"
+            android:gravity="center"
+            android:text="@{transaction.to}"
+            android:textColor="#000" />
+    </LinearLayout>
+</layout>

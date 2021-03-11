@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_expenses">
+
+    <fragment
+        android:id="@+id/nav_expenses"
+        android:name="ir.mrhib.dong.view.fragments.ExpensesFragment"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />
+
+    <fragment
+        android:id="@+id/nav_persons"
+        android:name="ir.mrhib.dong.view.fragments.PersonsFragment"
+        android:label="@string/menu_persons"
+        tools:layout="@layout/fragment_persons" />
+
+    <fragment
+        android:id="@+id/nav_report"
+        android:name="ir.mrhib.dong.view.fragments.ReportFragment"
+        android:label="@string/menu_report"
+        tools:layout="@layout/fragment_report" />
+</navigation>
